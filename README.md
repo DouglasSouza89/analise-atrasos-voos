@@ -21,6 +21,12 @@ Este projeto apresenta uma **análise exploratória de dados (EDA)** sobre **atr
 analise-atrasos-voos/
 ├── analyse_atrasos_voos.ipynb # Notebook com todas as análises e gráficos
 ├── dados_voo.xlsx # Base de dados utilizada
+├── images/ # Imagens dos gráficos
+│ ├── atraso_por_mes.png
+│ ├── atraso_por_hora.png
+│ ├── atraso_por_dia_semana.png
+│ ├── rotas_maior_atraso.png
+│ └── aeronaves_maior_atraso.png
 └── README.md # Documentação do projeto
 
 
@@ -42,17 +48,50 @@ analise-atrasos-voos/
 - Identificação das companhias com **maior percentual de voos atrasados**
 - Análise quantitativa e qualitativa do desempenho operacional
 
+---
+
 ### ✅ 2. Rotas e Aeronaves
-- Ranking das **rotas com maior atraso médio**
-- Ranking das **aeronaves com maior atraso médio**
-- Avaliação da influência de:
-  - Congestionamento aeroportuário
-  - Histórico operacional das aeronaves
+
+#### 🔹 Top 10 Rotas com Maior Atraso Médio
+![Top 10 Rotas com Maior Atraso](images/rotas_maior_atraso.png)
+
+- Forte concentração de atrasos em rotas com origem no aeroporto de **Newark (EWR)**.
+- Indícios claros de impacto por **congestionamento aeroportuário**.
+
+#### 🔹 Top 10 Aeronaves com Maior Atraso Médio
+![Top 10 Aeronaves com Maior Atraso](images/aeronaves_maior_atraso.png)
+
+- Algumas aeronaves apresentam **histórico operacional recorrente de atrasos**.
+- Indício de influência de **manutenção, programação e operação contínua**.
+
+---
 
 ### ✅ 3. Padrões Temporais
-- **Sazonalidade mensal** (picos em junho, julho e dezembro)
-- **Efeito cascata ao longo do dia**
-- **Comportamento semanal dos atrasos**
+
+#### 📅 Atraso Médio por Mês
+![Atraso por Mês](images/atraso_por_mes.png)
+
+- Evidência clara de **sazonalidade**, com picos em:
+  - **Junho**
+  - **Julho**
+  - **Dezembro**
+
+---
+
+#### ⏰ Atraso Médio por Hora do Dia
+![Atraso por Hora](images/atraso_por_hora.png)
+
+- Atrasos mais elevados na **madrugada e início da manhã**.
+- Crescimento gradual ao longo do dia caracteriza o **efeito cascata**.
+
+---
+
+#### 🗓️ Atraso Médio por Dia da Semana
+![Atraso por Dia da Semana](images/atraso_por_dia_semana.png)
+
+- **Quinta-feira** apresenta o maior atraso médio.
+- **Segunda e sexta** também apresentam altos índices.
+- **Sábado** possui o melhor desempenho operacional.
 
 ---
 
@@ -80,5 +119,8 @@ analise-atrasos-voos/
 ## 📌 Como Executar o Projeto
 
 1. Clone este repositório:
+
 ```bash
 git clone https://github.com/DouglasSouza289/analise-atrasos-voos.git
+
+
